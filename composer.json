@@ -1,0 +1,25 @@
+{
+  "name": "dashifen/login-required",
+  "description": "When enabled, requires that a visitor be logged into the site before displaying the site.",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "David Dashifen Kees",
+      "email": "dashifen@dashifen.com",
+      "role": "developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Dashifen\\LoginRequired\\": "src"
+    }
+  },
+  "require": {
+    "dashifen/wp-handler": "^10.3"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true
+  }
+}
