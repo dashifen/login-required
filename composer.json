@@ -2,6 +2,7 @@
   "name": "dashifen/login-required",
   "description": "When enabled, requires that a visitor be logged into the site before displaying the site.",
   "minimum-stability": "stable",
+  "type": "wordpress-plugin",
   "license": "MIT",
   "authors": [
     {
