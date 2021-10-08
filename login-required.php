@@ -9,19 +9,15 @@
  * License URI: https://opensource.org/licenses/MIT
  * Requires at least: 5.6
  * Requires PHP: 7.4
- * Version: 1.0.1
- *
- * @noinspection PhpIncludeInspection
+ * Version: 2.0.0
  */
 
 use Dashifen\Exception\Exception;
 use Dashifen\LoginRequired\LoginRequired;
 
-$autoloader = file_exists(dirname(ABSPATH) . '/deps/vendor/autoload.php')
-  ? dirname(ABSPATH) . '/deps/vendor/autoload.php'    // production location
-  : 'vendor/autoload.php';                            // development location
-
-require_once($autoloader);
+if (!class_exists('Dashifen\LoginRequired\LoginRequired')) {
+  require_once 'vendor/autoload.php';
+}
 
 try {
   (function () {
